@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exam Stopwatch</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form id="formDetails" action="main.js">
+		<h1>Exam Stopwatch 3000</h1>
+	  	<select name="exam" id="examName">
+		    <option value="English Advanced Paper 1">English Advanced Paper 1</option>
+		    <option value="English Advanced Paper 2">English Advanced Paper 2</option>
+	  	</select>
+	</form>
+
+	<button id="submitBtn" onclick="setDetails()">OK</button>
+
+	<h2 id="examNameDisplay"></h2>
+	<h2 id="examDate"></h2>
+
+	<div id="stopwatch" style="visibility:hidden">
+		<h1 id="display">00 : 00 : 00</h1>
+		<h3 id="readingTime"></h3>
+		<h3 id="writingTime"></h3>
+        <div class="buttons">
+            <button id="startStop" onclick="startStop()">Start</button>
+            <button id="reset" onclick="reset()">Reset</button>
+            <button id="reload" onclick="reloadpage()">Reload</button>
+        </div>
+	</div>
+	
+	<script src="js/stopwatch.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
